@@ -1,0 +1,57 @@
+:root {
+  --sky-blue: #78c0e0;
+  --celestial-blue: #449dd1;
+  --persian-blue: #192bc2;
+  --navy-blue: #150578;
+  --federal-blue: #0e0e52;
+
+  --header-font: "Rowdies", san-serif;
+  --paragraph-font: "Work Sans", sans-serif;
+}
+
+form fieldset {
+  border: 3px solid var(--federal-blue);
+  border-radius: 10px;
+  background-color: var(--sky-blue);
+  margin: 2rem auto;
+  padding: 0.5rem 2%;
+  max-width: 60rem;
+}
+
+form div,
+legend {
+  font-family: var(--paragraph-font);
+}
+
+legend {
+  font-weight: bold;
+}
+
+.sbs {
+  display: block;
+  padding: 0.75 rem 0;
+}
+
+.top,
+form div {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+
+.top input,
+.top select,
+.address-field {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px var(--federal-blue);
+  border-radius: 4px;
+  padding: 0.75 rem;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.required-field {
+  color: darkred;
+}
