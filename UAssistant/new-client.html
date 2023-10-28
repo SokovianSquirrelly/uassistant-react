@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAssistant | New Client</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <form action="">
+      <label for="fname">First Name:</label>
+      <br />
+      <input type="text" id="fname" name="fname" />
+      <br />
+
+      <label for="lname">Last Name:</label>
+      <br />
+      <input type="text" id="lname" name="lname" />
+      <br />
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="other">Other</label>
+      <br />
+
+      <label for="officer">Probation Officer:</label>
+      <br />
+      <input type="text" id="officer" name="officer" />
+      <br />
+
+      <label for="dob">Date of Birth:</label>
+      <br />
+      <input type="date" id="dob" name="dob" />
+      <br />
+
+      <p>Age Group:</p>
+      <input type="radio" id="adult" name="ageGroup" value="Adult" />
+      <label for="adult">Adult</label>
+      <input type="radio" id="juvenile" name="ageGroup" value="Juvenile" />
+      <label for="juvenile">Juvenile</label>
+      <br />
+
+      <label for="donor-type">Donor Type:</label>
+      <br />
+      <select name="donor-type" id="donor=type">
+        <option value="formal-supervision">Formal Supervision</option>
+        <option value="pre-trial">Pre-Trial Supervision</option>
+        <option value="mental-health">Mental Health Court</option>
+        <option value="drug-court">Drug Court</option>
+        <option value="jmp">JMP Court</option>
+        <option value="diversion">Diversion</option>
+        <option value="screening">Screening</option>
+        <option value="other">Other</option>
+      </select>
+      <br />
+
+      <label for="testing-group">Testing Group:</label>
+      <br />
+      <select name="testing-group" id="testing-group">
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+        <option value="green">Green</option>
+      </select>
+      <br />
+
+      <label for="activation-status">Activation Status</label>
+      <br />
+      <input type="radio" id="active" name="activation-status" value="Active" />
+      <label for="active">Active</label>
+      <input
+        type="radio"
+        id="inactive"
+        name="activation-status"
+        value="Inactive"
+      />
+      <label for="inactive">Inactive</label>
+      <br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>

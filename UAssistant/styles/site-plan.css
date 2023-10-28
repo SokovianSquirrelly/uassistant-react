@@ -1,0 +1,74 @@
+/*Color Palette is found at https://coolors.co/78c0e0-449dd1-192bc2-150578-0e0e52*/
+:root {
+  --sky-blue: #78c0e0;
+  --celestial-blue: #449dd1;
+  --persian-blue: #192bc2;
+  --navy-blue: #150578;
+  --federal-blue: #0e0e52;
+}
+
+#color-grid p {
+  font-weight: bold;
+}
+
+#color-1 {
+  background-color: var(--sky-blue);
+}
+
+#color-2 {
+  background-color: var(--celestial-blue);
+}
+
+#color-3 {
+  background-color: var(--persian-blue);
+}
+
+#color-3 p {
+  color: white;
+}
+
+#color-4 {
+  background-color: var(--navy-blue);
+}
+
+#color-4 p {
+  color: white;
+}
+
+#color-5 {
+  background-color: var(--federal-blue);
+}
+
+#color-5 p {
+  color: white;
+}
+
+.display-color {
+  border: 1px solid black;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  color: black;
+}
+
+p {
+  text-align: center;
+}
+
+header h1,
+header h2 {
+  color: white;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  text-align: left;
+}
