@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UAssistant Home</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <div id="root"></div>
@@ -18,16 +18,22 @@
     </nav>
     <main>
       <h1>Welcome to UAssistant</h1>
-      <section id="weather"></section>
-      <section id="reminders"></section>
       <div id="sign-in">
         <a href="sign-in.html">Click Here to Sign In</a>
       </div>
+      <section class="home-page-cards" id="weather">
+        <h3>Weather</h3>
+        <h4>{City Name}</h4>
+        <h4>{Temperature}</h4>
+        <h4>{Weather}</h4>
+      </section>
+      <section class="home-page-cards" id="reminders">
+        <h3>Next UA Testing Date:</h3>
+        <p>TBD</p>
+      </section>
     </main>
     <footer>
-      <p>
-        &copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho
-      </p>
+      <p>&copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho</p>
       <a href="site-plan.html">View Site Plan</a>
     </footer>
     <script type="module" src="/src/main.tsx"></script>

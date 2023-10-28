@@ -7,79 +7,101 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <form action="">
-      <label for="fname">First Name:</label>
-      <br />
-      <input type="text" id="fname" name="fname" />
-      <br />
+    <form method="get" action="">
+      <!--Basic Info-->
+      <fieldset>
+        <legend>Basic Information</legend>
+        <label>First Name* <input type="text" name="fname" required /></label>
+        <label>Last Name* <input type="text" name="lname" required /></label>
 
-      <label for="lname">Last Name:</label>
-      <br />
-      <input type="text" id="lname" name="lname" />
-      <br />
+        <div>Gender</div>
+        <label><input type="radio" name="gender" value="male" />Male</label>
+        <label><input type="radio" name="gender" value="female" />Female</label>
+        <label><input type="radio" name="gender" value="other" />Other</label>
 
-      <p>Gender:</p>
-      <input type="radio" id="male" name="gender" value="Male" />
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="Female" />
-      <label for="female">Female</label>
-      <input type="radio" id="other" name="gender" value="Other" />
-      <label for="other">Other</label>
-      <br />
+        <label
+          >Date of Birth* <input type="date" name="date-of-birth" required
+        /></label>
+      </fieldset>
 
-      <label for="officer">Probation Officer:</label>
-      <br />
-      <input type="text" id="officer" name="officer" />
-      <br />
+      <!--Contact Info-->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label
+          >Phone Number*
+          <input type="tel" name="phone" placeholder="2085551234" required
+        /></label>
+        <label
+          >Email
+          <input type="email" name="email" placeholder="someone@gmail.com"
+        /></label>
 
-      <label for="dob">Date of Birth:</label>
-      <br />
-      <input type="date" id="dob" name="dob" />
-      <br />
+        <div id="home-address">
+          <label>Home Address*</label>
+          <input type="text" name="street" placeholder="Street" required />
+          <input type="text" name="city" placeholder="City" required />
+          <input type="text" name="state" placeholder="State" required />
+          <input
+            type="text"
+            name="zip"
+            placeholder="Zip or Postal Code (Optional)"
+          />
+        </div>
+      </fieldset>
 
-      <p>Age Group:</p>
-      <input type="radio" id="adult" name="ageGroup" value="Adult" />
-      <label for="adult">Adult</label>
-      <input type="radio" id="juvenile" name="ageGroup" value="Juvenile" />
-      <label for="juvenile">Juvenile</label>
-      <br />
+      <!--Probation Info-->
+      <fieldset>
+        <legend>Probation Related Information</legend>
+        <label
+          >Probation Officer* <input type="text" name="officer" required
+        /></label>
 
-      <label for="donor-type">Donor Type:</label>
-      <br />
-      <select name="donor-type" id="donor=type">
-        <option value="formal-supervision">Formal Supervision</option>
-        <option value="pre-trial">Pre-Trial Supervision</option>
-        <option value="mental-health">Mental Health Court</option>
-        <option value="drug-court">Drug Court</option>
-        <option value="jmp">JMP Court</option>
-        <option value="diversion">Diversion</option>
-        <option value="screening">Screening</option>
-        <option value="other">Other</option>
-      </select>
-      <br />
+        <div>Age Group</div>
+        <label
+          ><input
+            type="radio"
+            name="age-group"
+            value="juvenile"
+          />Juvenile</label
+        >
+        <label
+          ><input type="radio" name="age-group" value="adult" />Adult</label
+        >
 
-      <label for="testing-group">Testing Group:</label>
-      <br />
-      <select name="testing-group" id="testing-group">
-        <option value="blue">Blue</option>
-        <option value="yellow">Yellow</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-      </select>
-      <br />
+        <label
+          >Donor Type
+          <select name="donor-type">
+            <option value="">Please Select</option>
+            <option value="formal-supervision">Formal Supervision</option>
+            <option value="pre-trial">Pre-Trial Supervision</option>
+            <option value="mental-health">Mental Health Court</option>
+            <option value="drug-court">Drug Court</option>
+            <option value="jmp">JMP Court</option>
+            <option value="diversion">Diversion</option>
+            <option value="screening">Screening</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
 
-      <label for="activation-status">Activation Status</label>
-      <br />
-      <input type="radio" id="active" name="activation-status" value="Active" />
-      <label for="active">Active</label>
-      <input
-        type="radio"
-        id="inactive"
-        name="activation-status"
-        value="Inactive"
-      />
-      <label for="inactive">Inactive</label>
-      <br />
+        <label
+          >Testing Group
+          <select name="testing-group" id="testing-group">
+            <option value="">None</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="pink">Pink</option>
+            <option value="green">Green</option>
+          </select>
+        </label>
+
+        <label
+          ><input
+            type="checkbox"
+            name="activation-status"
+            value="active"
+          />Active</label
+        >
+      </fieldset>
 
       <input type="submit" />
     </form>

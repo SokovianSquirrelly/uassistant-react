@@ -41,8 +41,9 @@ footer {
   background-color: var(--persian-blue);
 }
 
-footer p {
+footer a, footer p {
   color: white;
+  padding: 5px;
 }
 
 h1,
@@ -60,4 +61,10 @@ nav {
 nav ul {
   display: flex;
   list-style-type: none;
+}
+
+.home-page-cards {
+  border: 7px solid var(--federal-blue);
+  margin: 5px;
+  background-color: var(--sky-blue)
 }
