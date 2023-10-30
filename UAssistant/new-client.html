@@ -29,7 +29,11 @@
           ><input type="radio" name="gender" value="female" />Female</label
         >
         <label class="sbs"
-          ><input type="radio" name="gender" value="other" />Other</label
+          ><input
+            type="radio"
+            name="gender"
+            value="other"
+          />Non-binary/Unspecified</label
         >
 
         <label class="top"
@@ -140,11 +144,20 @@
       </fieldset>
 
       <p>
-        The red asterisks (<span class="required-field">*</span>) indicates a
-        required field.
+        <b>
+          The red asterisks (<span class="required-field">*</span>) indicate a
+          required field.</b
+        >
       </p>
 
-      <input id="submitButton" type="submit" />
+      <input id="submitButton" value="Create New Client" type="submit" />
+      <input id="backButton" value="Go Back" type="button" />
     </form>
+
+    <footer>
+      <p>&copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho</p>
+      <a href="site-plan.html">View Site Plan</a>
+    </footer>
+    <script src="src/dates.js"></script>
   </body>
 </html>
