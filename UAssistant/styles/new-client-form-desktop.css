@@ -1,0 +1,9 @@
+@media only screen and (min-width: 32em) {
+  #endButtons {
+    display: flex;
+  }
+
+  #endButtons input {
+    margin: 1rem;
+  }
+}

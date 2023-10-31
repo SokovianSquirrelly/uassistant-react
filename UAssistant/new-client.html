@@ -6,6 +6,7 @@
     <title>UAssistant | New Client</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/new-client-form.css" />
+    <link rel="stylesheet" href="styles/new-client-form-desktop.css" />
   </head>
   <body>
     <form method="get" action="">
@@ -21,18 +22,24 @@
           <input type="text" name="lname" required
         /></label>
 
-        <div>Gender</div>
+        <div>Gender<span class="required-field">*</span></div>
         <label class="sbs"
-          ><input type="radio" name="gender" value="male" />Male</label
+          ><input type="radio" name="gender" value="male" required />Male</label
         >
         <label class="sbs"
-          ><input type="radio" name="gender" value="female" />Female</label
+          ><input
+            type="radio"
+            name="gender"
+            value="female"
+            required
+          />Female</label
         >
         <label class="sbs"
           ><input
             type="radio"
             name="gender"
             value="other"
+            required
           />Non-binary/Unspecified</label
         >
 
@@ -150,8 +157,10 @@
         >
       </p>
 
-      <input id="submitButton" value="Create New Client" type="submit" />
-      <input id="backButton" value="Go Back" type="button" />
+      <section id="endButtons">
+        <input id="submitButton" value="Create New Client" type="submit" />
+        <input id="backButton" value="Go Back" type="button" />
+      </section>
     </form>
 
     <footer>
