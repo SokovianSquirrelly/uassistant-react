@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UAssistant | New Client</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/new-client-form.css" />
-    <link rel="stylesheet" href="styles/new-client-form-desktop.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/form-desktop.css" />
   </head>
   <body>
     <form method="get" action="">
       <!--Basic Info-->
       <fieldset>
+
         <legend>Basic Information</legend>
+
         <label class="top"
           >First Name<span class="required-field">*</span>
           <input type="text" name="fname" required
         /></label>
+
         <label class="top"
           >Last Name<span class="required-field">*</span>
           <input type="text" name="lname" required
@@ -47,15 +50,19 @@
           >Date of Birth<span class="required-field">*</span>
           <input type="date" name="date-of-birth" required
         /></label>
+
       </fieldset>
 
       <!--Contact Info-->
       <fieldset>
+
         <legend>Contact Information</legend>
+
         <label class="top"
           >Phone Number<span class="required-field">*</span>
           <input type="tel" name="phone" placeholder="2085551234" required
         /></label>
+
         <label class="top"
           >Email
           <input type="email" name="email" placeholder="someone@gmail.com"
@@ -97,7 +104,9 @@
 
       <!--Probation Info-->
       <fieldset>
+
         <legend>Probation Related Information</legend>
+        
         <label class="top"
           >Probation Officer<span class="required-field">*</span>
           <input type="text" name="officer" required
@@ -158,8 +167,8 @@
       </p>
 
       <section id="endButtons">
+        <input id="backButton" value="Cancel" type="button" />
         <input id="submitButton" value="Create New Client" type="submit" />
-        <input id="backButton" value="Go Back" type="button" />
       </section>
     </form>
 

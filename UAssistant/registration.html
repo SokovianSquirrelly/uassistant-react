@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
-</head>
-<body>
-    <form>
-        
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/form-desktop.css" />
+  </head>
+  <body>
+    <form method="get">
+      <fieldset>
+
+        <label class="top"
+          >First Name<span class="required-field">*</span>
+          <input type="text" id="employee-fname" name="fname" required
+        /></label>
+
+        <label class="top"
+          >Last Name<span class="required-field">*</span>
+          <input type="text" id="employee-lname" name="lname" required
+        /></label>
+
+        <label class="top"
+          >Email<span class="required-field">*</span>
+          <input type="email" id="employee-email" name="email" required
+        /></label>
+
+        <label class="top"
+          >Phone Number<span class="required-field">*</span>
+          <input type="phone" id="employee-phone" name="phone" required
+        /></label>
+
+        <!--TODO: Figure out how we want to choose department (by code?)-->
+        <label class="top">Department Name <input type="text" /></label>
+
+        <label class="top"
+          >Username<span class="required-field">*</span>
+          <input type="text" id="username" name="username" required
+        /></label>
+
+        <label class="top"
+          >Password<span class="required-field">*</span>
+          <input type="password" id="password" name="password" required
+        /></label>
+
+        <label class="top"
+          >Confirm Password<span class="required-field">*</span>
+          <input type="password" id="confirm" name="confirm"
+        /></label>
+
+        <p id="form-message"></p>
+
+      </fieldset>
+
+      <section id="endButtons">
+        <input id="backButton" value="Cancel" type="button" />
+        <input id="submitButton" value="Continue" type="submit" />
+      </section>
+
     </form>
-</body>
+
+    <footer>
+      <p>&copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho</p>
+      <a href="site-plan.html">View Site Plan</a>
+    </footer>
+    <script src="src/dates.js"></script>
+    <script src="src/checkPasswords.js"></script>
+  </body>
 </html>
