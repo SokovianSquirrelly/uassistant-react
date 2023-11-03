@@ -1,13 +1,4 @@
-:root {
-  --sky-blue: #78c0e0;
-  --celestial-blue: #449dd1;
-  --persian-blue: #192bc2;
-  --navy-blue: #150578;
-  --federal-blue: #0e0e52;
-
-  --header-font: "Rowdies", san-serif;
-  --paragraph-font: "Work Sans", sans-serif;
-}
+@import "root.css";
 
 label {
   padding: 0.75em 0;
