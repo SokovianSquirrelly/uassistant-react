@@ -1,0 +1,6 @@
+@media only screen and (min-width: 769px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}

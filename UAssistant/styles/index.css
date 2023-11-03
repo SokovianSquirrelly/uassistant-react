@@ -25,7 +25,8 @@ footer {
   background-color: var(--persian-blue);
 }
 
-footer a, footer p {
+footer a,
+footer p {
   color: white;
   padding: 5px;
 }
@@ -40,15 +41,21 @@ h4 {
 
 nav {
   background-color: var(--federal-blue);
+  text-align: center;
 }
 
 nav ul {
-  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+nav ul li {
+  padding: 5px;
 }
 
 .home-page-cards {
   border: 7px solid var(--federal-blue);
   margin: 5px;
-  background-color: var(--sky-blue)
+  background-color: var(--sky-blue);
 }

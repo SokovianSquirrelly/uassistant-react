@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UAssistant | New Client</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/index-desktop.css" />
     <link rel="stylesheet" href="styles/form.css" />
     <link rel="stylesheet" href="styles/form-desktop.css" />
   </head>
+  <nav>
+    <ul>
+      <li><a href="client-manager.html">Manage Donors</a></li>
+      <li><a href="#">UA Testing</a></li>
+      <li><a href="#">Manage Messaging</a></li>
+      <li><a href="substance-reference.html">Substance Reference</a></li>
+    </ul>
+  </nav>
   <body>
     <form method="get" action="">
       <!--Basic Info-->
       <fieldset>
-
         <legend>Basic Information</legend>
 
         <label class="top"
@@ -50,12 +58,10 @@
           >Date of Birth<span class="required-field">*</span>
           <input type="date" name="date-of-birth" required
         /></label>
-
       </fieldset>
 
       <!--Contact Info-->
       <fieldset>
-
         <legend>Contact Information</legend>
 
         <label class="top"
@@ -104,9 +110,8 @@
 
       <!--Probation Info-->
       <fieldset>
-
         <legend>Probation Related Information</legend>
-        
+
         <label class="top"
           >Probation Officer<span class="required-field">*</span>
           <input type="text" name="officer" required
