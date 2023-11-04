@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAssistant | New Client</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/index-desktop.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/form-desktop.css" />
+  </head>
+  <nav>
+    <ul>
+      <li><a href="client-manager.html">Manage Donors</a></li>
+      <li><a href="#">UA Testing</a></li>
+      <li><a href="#">Manage Messaging</a></li>
+      <li><a href="substance-reference.html">Substance Reference</a></li>
+    </ul>
+  </nav>
+  <body>
+    <form method="get" action="">
+      <!--Basic Info-->
+      <fieldset>
+        <legend>Basic Information</legend>
+
+        <label class="top"
+          >First Name<span class="required-field">*</span>
+          <input type="text" name="fname" required
+        /></label>
+
+        <label class="top"
+          >Last Name<span class="required-field">*</span>
+          <input type="text" name="lname" required
+        /></label>
+
+        <div>Gender<span class="required-field">*</span></div>
+        <label class="sbs"
+          ><input type="radio" name="gender" value="male" required />Male</label
+        >
+        <label class="sbs"
+          ><input
+            type="radio"
+            name="gender"
+            value="female"
+            required
+          />Female</label
+        >
+        <label class="sbs"
+          ><input
+            type="radio"
+            name="gender"
+            value="other"
+            required
+          />Non-binary/Unspecified</label
+        >
+
+        <label class="top"
+          >Date of Birth<span class="required-field">*</span>
+          <input type="date" name="date-of-birth" required
+        /></label>
+      </fieldset>
+
+      <!--Contact Info-->
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label class="top"
+          >Phone Number<span class="required-field">*</span>
+          <input type="tel" name="phone" placeholder="2085551234" required
+        /></label>
+
+        <label class="top"
+          >Email
+          <input type="email" name="email" placeholder="someone@gmail.com"
+        /></label>
+
+        <div id="home-address">
+          <label class="top"
+            >Home Address<span class="required-field">*</span></label
+          >
+          <input
+            class="address-field"
+            type="text"
+            name="street"
+            placeholder="Street"
+            required
+          />
+          <input
+            class="address-field"
+            type="text"
+            name="city"
+            placeholder="City"
+            required
+          />
+          <input
+            class="address-field"
+            type="text"
+            name="state"
+            placeholder="State"
+            required
+          />
+          <input
+            class="address-field"
+            type="text"
+            name="zip"
+            placeholder="Zip or Postal Code (Optional)"
+          />
+        </div>
+      </fieldset>
+
+      <!--Probation Info-->
+      <fieldset>
+        <legend>Probation Related Information</legend>
+
+        <label class="top"
+          >Probation Officer<span class="required-field">*</span>
+          <input type="text" name="officer" required
+        /></label>
+
+        <div>Age Group</div>
+        <label class="sbs"
+          ><input
+            type="radio"
+            name="age-group"
+            value="juvenile"
+          />Juvenile</label
+        >
+        <label class="sbs"
+          ><input type="radio" name="age-group" value="adult" />Adult</label
+        >
+
+        <label class="top"
+          >Donor Type
+          <select name="donor-type">
+            <option value="">Please Select</option>
+            <option value="formal-supervision">Formal Supervision</option>
+            <option value="pre-trial">Pre-Trial Supervision</option>
+            <option value="mental-health">Mental Health Court</option>
+            <option value="drug-court">Drug Court</option>
+            <option value="jmp">JMP Court</option>
+            <option value="diversion">Diversion</option>
+            <option value="screening">Screening</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <label class="top"
+          >Testing Group
+          <select name="testing-group" id="testing-group">
+            <option value="">None</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="pink">Pink</option>
+            <option value="green">Green</option>
+          </select>
+        </label>
+
+        <label class="sbs"
+          ><input
+            type="checkbox"
+            name="activation-status"
+            value="active"
+          />Active</label
+        >
+      </fieldset>
+
+      <p>
+        <b>
+          The red asterisks (<span class="required-field">*</span>) indicate a
+          required field.</b
+        >
+      </p>
+
+      <section id="endButtons">
+        <input id="backButton" value="Cancel" type="button" />
+        <input id="submitButton" value="Create New Client" type="submit" />
+      </section>
+    </form>
+
+    <footer>
+      <p>&copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho</p>
+      <a href="site-plan.html">View Site Plan</a>
+    </footer>
+    <script src="src/dates.js"></script>
+    <script src="scripts/database-interact.js" type="module"></script>
+  </body>
+</html>

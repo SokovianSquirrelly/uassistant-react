@@ -1,0 +1,31 @@
+table {
+  margin: 10px auto;
+  border-collapse: collapse;
+  background-color: darkgray;
+  max-width: 85%;
+}
+
+th {
+  border: 3px solid black;
+  font-family: var(--header-font);
+  font-size: 1.25em;
+  background-color: var(--persian-blue);
+  color: white;
+}
+
+td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-family: var(--paragraph-font);
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightgray;
+}

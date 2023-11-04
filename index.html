@@ -2,11 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>UAssistant Home</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/index-desktop.css" />
   </head>
   <body>
-    <p>This is for testing purposes only</p>
-    <a href="UAssistant/index.html">Click Here</a>
+    <div id="root"></div>
+    <header></header>
+    <nav>
+      <ul>
+        <li><a href="client-manager.html">Manage Donors</a></li>
+        <li><a href="#">UA Testing</a></li>
+        <li><a href="#">Manage Messaging</a></li>
+        <li><a href="substance-reference.html">Substance Reference</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Welcome to UAssistant</h1>
+      <div id="sign-in">
+        <a href="sign-in.html">Click Here to Sign In</a>
+      </div>
+      <section class="home-page-cards" id="weather">
+        <h3>Weather</h3>
+        <h4>{City Name}</h4>
+        <h4>{Temperature}</h4>
+        <h4>{Weather}</h4>
+      </section>
+      <section class="home-page-cards" id="reminders">
+        <h3>Next UA Testing Date:</h3>
+        <p>TBD</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho</p>
+      <a href="site-plan.html">View Site Plan</a>
+    </footer>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="src/dates.js"></script>
   </body>
 </html>
