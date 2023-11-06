@@ -20,6 +20,14 @@ body {
   background-color: var(--celestial-blue);
 }
 
+header a img {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header,
 footer {
   background-color: var(--persian-blue);
