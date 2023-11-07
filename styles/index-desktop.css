@@ -1,6 +1,28 @@
 @media only screen and (min-width: 769px) {
+  
+  header a {
+    margin-left: 20px;
+  }
+
+  nav {
+    display: flex;
+  }
+
   nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space between;
+  }
+
+  nav ul li {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 22px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    border-radius:5px;
   }
 }
