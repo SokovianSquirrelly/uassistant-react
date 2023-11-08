@@ -8,6 +8,10 @@
     display: flex;
   }
 
+  nav a img {
+    max-width: 150px;
+  }
+
   nav ul {
     display: flex;
     justify-content: space between;
