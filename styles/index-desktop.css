@@ -1,5 +1,7 @@
 @media only screen and (min-width: 769px) {
   
+  /******NAV-BAR******/
+
   header a {
     margin-left: 20px;
   }
@@ -28,5 +30,21 @@
   nav ul li a {
     padding: 10px;
     border-radius:5px;
+  }
+
+  /******MAIN******/
+
+  h1 {
+    font-size: 4rem;
+  }
+  
+  #home-main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 2rem;
+  }
+
+  #weather {
+    grid-column: 1/2;
   }
 }
