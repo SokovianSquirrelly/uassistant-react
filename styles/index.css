@@ -32,6 +32,12 @@ h4 {
 
 .home-page-cards {
   border: 7px solid var(--federal-blue);
-  margin: 5px;
+  margin: 1.5rem;
   background-color: var(--sky-blue);
+  padding: 1rem;
+}
+
+.home-page-cards h3,
+h4 {
+  padding: 0.5rem;
 }
