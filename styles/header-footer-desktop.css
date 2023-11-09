@@ -11,12 +11,18 @@
     max-width: 150px;
   }
 
-  nav ul {
-    display: flex;
+  #menu-button {
+    display: none;
+  }
+
+  .navigation {
+    flex-direction: row;
     justify-content: space between;
   }
 
-  nav ul li {
+  .navigation li {
+    display: block;
+    padding: 5px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 20px;
