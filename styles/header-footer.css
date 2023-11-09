@@ -54,8 +54,8 @@ footer {
   padding-bottom: 1em;
 }
 
-footer a,
-footer p {
+footer a, p {
   color: white;
-  padding: 5px;
+  padding: 0.5rem;
+  margin: 1rem;
 }

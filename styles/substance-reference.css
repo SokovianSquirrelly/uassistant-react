@@ -1,6 +1,6 @@
 table {
   border: 3px solid black;
-  margin: 10px auto;
+  margin: 2rem auto;
   border-collapse: collapse;
   background-color: darkgray;
   max-width: 85%;
@@ -29,4 +29,8 @@ td {
 
 tbody tr:nth-child(even) {
   background-color: lightgray;
+}
+
+body p {
+  margin: 1rem;
 }
