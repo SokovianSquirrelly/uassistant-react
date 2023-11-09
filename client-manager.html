@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/index-desktop.css" />
+    <link rel="stylesheet" href="styles/client-manager.css" />
   </head>
 
   <header>
@@ -24,16 +25,14 @@
       </ul>
     </nav>
   </header>
-  
+
   <body>
     <main>
       <div id="search-bar">
         <a href="new-client.html">Add New Donor</a>
-        <a href="#">Edit Donor</a>
-        <a href="#">Remove Donor</a>
         <input type="text" placeholder="Search..." />
       </div>
-      <table>
+      <table id="client-table">
         <thead>
           <tr>
             <th>Donor ID</th>

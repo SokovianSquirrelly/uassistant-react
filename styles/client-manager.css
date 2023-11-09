@@ -1,0 +1,20 @@
+#client-table {
+    margin: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+    background-color: darkgray;
+    max-width: 85%;
+}
+
+th {
+    border: 3px solid black;
+    font-family: var(--paragraph-font);
+    font-size: 1.25em;
+    background-color: var(--persian-blue);
+    color: white;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}

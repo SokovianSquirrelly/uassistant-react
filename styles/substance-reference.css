@@ -8,7 +8,7 @@ table {
 
 th {
   border: 3px solid black;
-  font-family: var(--header-font);
+  font-family: var(--paragraph-font);
   font-size: 1.25em;
   background-color: var(--persian-blue);
   color: white;
