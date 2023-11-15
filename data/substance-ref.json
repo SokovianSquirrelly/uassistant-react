@@ -90,7 +90,7 @@
     {
         "name": "Methamphetamine",
         "abbreviation": "M-AMP",
-        "drug-class": "Stimulant",
+        "drugClass": "Stimulant",
         "prescribed": false,
         "streetNames": "Crystal Meth, Speed",
         "commonPrescriptions": "N/A"
@@ -98,7 +98,7 @@
     {
         "name": "Methylenedioxymethamphetamine",
         "abbreviation": "MDMA",
-        "drug-class": "Hallucinogen",
+        "drugClass": "Hallucinogen",
         "prescribed": false,
         "streetNames": "Ecstacy, Molly",
         "commonPrescriptions": "N/A"
@@ -106,7 +106,7 @@
     {
         "name": "Morphine",
         "abbreviation": "MOP",
-        "drug-class": "Narcotic",
+        "drugClass": "Narcotic",
         "prescribed": true,
         "streetNames": "",
         "commonPrescriptions": "Duramorph, Roxanol, Codeine"
@@ -114,7 +114,7 @@
     {
         "name": "Opioids",
         "abbreviation": "OPI",
-        "drug-class": "Narcotic",
+        "drugClass": "Narcotic",
         "prescribed": true,
         "streetNames": "",
         "commonPrescriptions": "Hydrocodone"
@@ -122,7 +122,7 @@
     {
         "name": "Oxycodone",
         "abbreviation": "OXY",
-        "drug-class": "Narcotic",
+        "drugClass": "Narcotic",
         "prescribed": true,
         "streetNames": "Oxy, O.C, Heroin",
         "commonPrescriptions": "OxyCotin, Percodan, Percocet"
@@ -130,7 +130,7 @@
     {
         "name": "Phencyclidine",
         "abbreviation": "PCP",
-        "drug-class": "Dissociative Anesthetics",
+        "drugClass": "Dissociative Anesthetics",
         "prescribed": false,
         "streetNames": "PCP, Angel Dust, Rocket Fuel, Purple Rain",
         "commonPrescriptions": "N/A"
@@ -138,7 +138,7 @@
     {
         "name": "Tramadol",
         "abbreviation": "TRA",
-        "drug-class": "Narcotic",
+        "drugClass": "Narcotic",
         "prescribed": true,
         "streetNames": "Chill Pills, Trammies, Ultras",
         "commonPrescriptions": "Ultram"
@@ -146,7 +146,7 @@
     {
         "name": "Tricyclic Antidepressants",
         "abbreviation": "TCA",
-        "drug-class": "Depressant",
+        "drugClass": "Depressant",
         "prescribed": true,
         "streetNames": "",
         "commonPrescriptions": "Amitriptyline, Amoxapine Desipramine (Norpramin), Doxepin"
