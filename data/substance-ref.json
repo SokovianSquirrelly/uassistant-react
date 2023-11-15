@@ -2,153 +2,153 @@
     {
         "name": "Amphetamines",
         "abbreviation": "AMP",
-        "drug-class": "Stimulant",
+        "drugClass": "Stimulant",
         "prescribed": true,
-        "street-names": "Uppers, Speed, Ice, Black Beauties",
-        "common-prescriptions": "Adderall, Vyvanse, Ritalin, Dexedrine"
+        "streetNames": "Uppers, Speed, Ice, Black Beauties",
+        "commonPrescriptions": "Adderall, Vyvanse, Ritalin, Dexedrine"
     },
     {
         "name": "Barbiturates",
         "abbreviation": "BAR",
-        "drug-class": "Depressant",
+        "drugClass": "Depressant",
         "prescribed": true,
-        "street-names": "Barbs, Yellow Jackets, Red Devils, Goof Balls",
-        "common-prescriptions": "Amobarbital, Butalbital, Methohexital"
+        "streetNames": "Barbs, Yellow Jackets, Red Devils, Goof Balls",
+        "commonPrescriptions": "Amobarbital, Butalbital, Methohexital"
     },
     {
         "name": "Benzodiazepines",
         "abbreviation": "BZO",
-        "drug-class": "Depressant",
+        "drugClass": "Depressant",
         "prescribed": true,
-        "street-names": "Benzos, Downers",
-        "common-prescriptions": "Ativan (Lorazepam), Xanax (Alpraxolam), Valium (Diazepam), Halcion (Triazolam), Klonopin (Clonazepam)"
+        "streetNames": "Benzos, Downers",
+        "commonPrescriptions": "Ativan (Lorazepam), Xanax (Alpraxolam), Valium (Diazepam), Halcion (Triazolam), Klonopin (Clonazepam)"
     },
     {
         "name": "Buprenorphine",
         "abbreviation": "BUP",
-        "drug-class": "Narcotic",
+        "drugClass": "Narcotic",
         "prescribed": true,
-        "street-names": "Big Whites, Oranges, Buse",
-        "common-prescriptions": "Subutex, Suboxone, Probuphine, Zubsolv"
+        "streetNames": "Big Whites, Oranges, Buse",
+        "commonPrescriptions": "Subutex, Suboxone, Probuphine, Zubsolv"
     },
     {
         "name": "Cannabinoids (Marijuana)*",
         "abbreviation": "THC",
-        "drug-class": "Cannabis",
+        "drugClass": "Cannabis",
         "prescribed": true,
-        "street-names": "Weed, Pot, Dope, Reefer, Grass, Mary Jane",
-        "common-prescriptions": ""
+        "streetNames": "Weed, Pot, Dope, Reefer, Grass, Mary Jane",
+        "commonPrescriptions": ""
     },
     {
         "name": "Cocaine",
         "abbreviation": "COC",
-        "drug-class": "Stimulant",
+        "drugClass": "Stimulant",
         "prescribed": false,
-        "street-names": "Coke, Crack, Snow, Blow, Powder",
+        "streetNames": "Coke, Crack, Snow, Blow, Powder",
         "common-prescriptions": "N/A"
     },
     {
         "name": "Dextropropoxyphene",
         "abbreviation": "PPX",
-        "drug-class": "Narcotic",
+        "drugClass": "Narcotic",
         "prescribed": false,
-        "street-names": "Footballs, N's, Pinks, Dillies",
-        "common-prescriptions": "Darvon, Darvocet"
+        "streetNames": "Footballs, N's, Pinks, Dillies",
+        "commonPrescriptions": "Darvon, Darvocet"
     },
     {
         "name": "Ethylglucuronide (Byproduct of Alcohol)",
         "abbreviation": "ETG",
-        "drug-class": "Depressant",
+        "drugClass": "Depressant",
         "prescribed": false,
-        "street-names": "Booze",
-        "common-prescriptions": "N/A"
+        "streetNames": "Booze",
+        "commonPrescriptions": "N/A"
     },
     {
         "name": "Fentanyl",
         "abbreviation": "FTY",
-        "drug-class": "Narcotic",
+        "drugClass": "Narcotic",
         "prescribed": true,
-        "street-names": "",
-        "common-prescriptions": ""
+        "streetNames": "",
+        "commonPrescriptions": ""
     },
     {
         "name": "JWH-18 (Synthetic Marijuana)",
         "abbreviation": "JWH",
-        "drug-class": "Cannabis",
+        "drugClass": "Cannabis",
         "prescribed": false,
-        "street-names": "Fake Weed, Spice, K2",
+        "streetNames": "Fake Weed, Spice, K2",
         "common-prescriptions": "N/A"
     },
     {
         "name": "Methadone",
         "abbreviation": "MTD",
-        "drug-class": "Narcotic",
+        "drugClass": "Narcotic",
         "prescribed": true,
-        "street-names": "Fizzies",
-        "common-prescriptions": "Dolophine, Methadose"
+        "streetNames": "Fizzies",
+        "commonPrescriptions": "Dolophine, Methadose"
     },
     {
         "name": "Methamphetamine",
         "abbreviation": "M-AMP",
         "drug-class": "Stimulant",
         "prescribed": false,
-        "street-names": "Crystal Meth, Speed",
-        "common-prescriptions": "N/A"
+        "streetNames": "Crystal Meth, Speed",
+        "commonPrescriptions": "N/A"
     },
     {
         "name": "Methylenedioxymethamphetamine",
         "abbreviation": "MDMA",
         "drug-class": "Hallucinogen",
         "prescribed": false,
-        "street-names": "Ecstacy, Molly",
-        "common-prescriptions": "N/A"
+        "streetNames": "Ecstacy, Molly",
+        "commonPrescriptions": "N/A"
     },
     {
         "name": "Morphine",
         "abbreviation": "MOP",
         "drug-class": "Narcotic",
         "prescribed": true,
-        "street-names": "",
-        "common-prescriptions": "Duramorph, Roxanol, Codeine"
+        "streetNames": "",
+        "commonPrescriptions": "Duramorph, Roxanol, Codeine"
     },
     {
         "name": "Opioids",
         "abbreviation": "OPI",
         "drug-class": "Narcotic",
         "prescribed": true,
-        "street-names": "",
-        "common-prescriptions": "Hydrocodone"
+        "streetNames": "",
+        "commonPrescriptions": "Hydrocodone"
     },
     {
         "name": "Oxycodone",
         "abbreviation": "OXY",
         "drug-class": "Narcotic",
         "prescribed": true,
-        "street-names": "Oxy, O.C, Heroin",
-        "common-prescriptions": "OxyCotin, Percodan, Percocet"
+        "streetNames": "Oxy, O.C, Heroin",
+        "commonPrescriptions": "OxyCotin, Percodan, Percocet"
     },
     {
         "name": "Phencyclidine",
         "abbreviation": "PCP",
         "drug-class": "Dissociative Anesthetics",
         "prescribed": false,
-        "street-names": "PCP, Angel Dust, Rocket Fuel, Purple Rain",
-        "common-prescriptions": "N/A"
+        "streetNames": "PCP, Angel Dust, Rocket Fuel, Purple Rain",
+        "commonPrescriptions": "N/A"
     },
     {
         "name": "Tramadol",
         "abbreviation": "TRA",
         "drug-class": "Narcotic",
         "prescribed": true,
-        "street-names": "Chill Pills, Trammies, Ultras",
-        "common-prescriptions": "Ultram"
+        "streetNames": "Chill Pills, Trammies, Ultras",
+        "commonPrescriptions": "Ultram"
     },
     {
         "name": "Tricyclic Antidepressants",
         "abbreviation": "TCA",
         "drug-class": "Depressant",
         "prescribed": true,
-        "street-names": "",
-        "common-prescriptions": "Amitriptyline, Amoxapine Desipramine (Norpramin), Doxepin"
+        "streetNames": "",
+        "commonPrescriptions": "Amitriptyline, Amoxapine Desipramine (Norpramin), Doxepin"
     }
 ]
