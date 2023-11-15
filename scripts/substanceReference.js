@@ -18,7 +18,42 @@ async function getSubstanceData() {
   }
 }
 
-function displayForMobile(data) {}
+function displayForMobile(data) {
+  data.forEach((substance) => {
+    const substanceSection = document.createElement("section");
+    substanceSection.classList.add("substance");
+    
+    const substanceName = document.createElement("h3");
+    substanceName.textContent = `${substance.name} - ${substance.abbreviation}`;
+
+    const details = document.createElement("ul");
+
+    const drugClass = document.createElement("li");
+    drugClass.textContent = `Drug Class: ${substance.drugClass}`;
+
+    const prescribed = document.createElement("li");
+    if (substance.prescribed) {
+      prescribed.textContent = "Can be Prescribed?: Yes";
+    } else {
+      prescribed.textContent = "Can be Prescribed?: No";
+    }
+
+    const streetNames = document.createElement("li");
+    streetNames.textContent = `Street Names: ${substance.streetNames}`;
+
+    const prescriptionNames = document.createElement("li");
+    prescriptionNames.textContent = `Common Prescriptions: ${substance.commonPrescriptions}`;
+
+    details.appendChild(drugClass);
+    details.appendChild(prescribed);
+    details.appendChild(streetNames);
+    details.appendChild(prescriptionNames);
+
+    substanceSection.appendChild(substanceName);
+    substanceSection.appendChild(details);
+    display.appendChild(substanceSection);
+  });
+}
 
 function displayForDesktop(data) {
   const table = document.createElement("table");
