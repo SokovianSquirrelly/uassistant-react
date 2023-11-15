@@ -1,3 +1,68 @@
+/***********************************************/
+/***********************************************/
+/********************MOBILE*********************/
+/***********************************************/
+/***********************************************/
+
+#reference-table {
+  margin: 1rem auto;
+  max-width: 95%;
+}
+
+.substance {
+  border: 2px solid black;
+  background-color: var(--sky-blue);
+}
+
+.substanceHeader {
+  background-color: var(--persian-blue);
+  border-bottom: 2px solid black;
+  display: flex;
+}
+
+.substanceHeader h3 {
+  color: white;
+  padding: 1rem;
+  font-family: var(--paragraph-font);
+}
+
+.expand {
+  border: none;
+  font-size: 1.5rem;
+  background-color: var(--persian-blue);
+  color: white;
+}
+
+.expand::before {
+  content: "▾";
+}
+
+.expand.open::before {
+  content: "◂";
+}
+
+.substanceDetails {
+  display: none;
+}
+
+.substanceDetails.open {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+  margin: 0.5rem;
+  font-family: var(--paragraph-font);
+}
+
+
+
+/***********************************************/
+/***********************************************/
+/********************DESKTOP********************/
+/***********************************************/
+/***********************************************/
+
 table {
   border: 3px solid black;
   margin: 2rem auto;

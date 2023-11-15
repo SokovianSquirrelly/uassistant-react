@@ -22,11 +22,25 @@ function displayForMobile(data) {
   data.forEach((substance) => {
     const substanceSection = document.createElement("section");
     substanceSection.classList.add("substance");
-    
+
+    // SUBSTANCE HEADER
+
+    const substanceHeader = document.createElement("section");
+    substanceHeader.classList.add("substanceHeader");
+
     const substanceName = document.createElement("h3");
     substanceName.textContent = `${substance.name} - ${substance.abbreviation}`;
 
+    const expandButton = document.createElement("button");
+    expandButton.classList.add("expand");
+
+    substanceHeader.appendChild(substanceName);
+    substanceHeader.appendChild(expandButton);
+
+    // SUBSTANCE DETAILS
+
     const details = document.createElement("ul");
+    details.classList.add("substanceDetails");
 
     const drugClass = document.createElement("li");
     drugClass.textContent = `Drug Class: ${substance.drugClass}`;
@@ -49,9 +63,14 @@ function displayForMobile(data) {
     details.appendChild(streetNames);
     details.appendChild(prescriptionNames);
 
-    substanceSection.appendChild(substanceName);
+    substanceSection.appendChild(substanceHeader);
     substanceSection.appendChild(details);
     display.appendChild(substanceSection);
+
+    expandButton.addEventListener("click", () => {
+      expandButton.classList.toggle("open");
+      details.classList.toggle("open");
+    });
   });
 }
 
