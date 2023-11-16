@@ -3,13 +3,7 @@
 @import "header-footer-desktop.css";
 
 a {
-  color: white;
   text-decoration: none;
-}
-
-a:hover {
-  background-color: var(--sky-blue);
-  color: black;
 }
 
 a,

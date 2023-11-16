@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap");
 
 /*Font for paragraphs*/
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
   margin: 0;
@@ -19,5 +19,5 @@
   --federal-blue: #0e0e52;
 
   --header-font: "Rowdies", san-serif;
-  --paragraph-font: "Work Sans", sans-serif;
+  --paragraph-font: "Rubik", san-serif;
 }

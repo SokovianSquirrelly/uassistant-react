@@ -1,9 +1,22 @@
 header a {
   display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
+  color: white;
+}
+
+header a:hover, footer a:hover {
+  background-color: var(--sky-blue);
+  color: black;
+}
+
+.main-img:hover {
+  background-color: var(--federal-blue);
+}
+
+header a img {
+  margin-top: 1em;
 }
 
 nav {
