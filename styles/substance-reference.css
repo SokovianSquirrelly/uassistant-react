@@ -11,14 +11,17 @@
 
 .substance {
   border: 2px solid black;
-  background-color: var(--sky-blue);
+  background-color: lightgray;
+  border-radius: 1em;
+  margin: .5rem;
 }
 
 .substanceHeader {
-  background-color: var(--persian-blue);
+  background-color: var(--navy-blue);
   border-bottom: 2px solid black;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  border-radius: 0.8em;
 }
 
 .substanceHeader h3 {
@@ -32,7 +35,7 @@
 .expand {
   border: none;
   font-size: 1.75rem;
-  background-color: var(--persian-blue);
+  background-color: transparent;
   color: white;
   padding: 0.5em;
 }

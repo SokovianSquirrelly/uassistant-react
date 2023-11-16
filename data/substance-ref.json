@@ -37,7 +37,7 @@
         "drugClass": "Cannabis",
         "prescribed": true,
         "streetNames": "Weed, Pot, Dope, Reefer, Grass, Mary Jane",
-        "commonPrescriptions": ""
+        "commonPrescriptions": "Cannabidiol (CBD), Medical Cannabis"
     },
     {
         "name": "Cocaine",
@@ -45,7 +45,7 @@
         "drugClass": "Stimulant",
         "prescribed": false,
         "streetNames": "Coke, Crack, Snow, Blow, Powder",
-        "common-prescriptions": "N/A"
+        "commonPrescriptions": "N/A"
     },
     {
         "name": "Dextropropoxyphene",
@@ -68,8 +68,8 @@
         "abbreviation": "FTY",
         "drugClass": "Narcotic",
         "prescribed": true,
-        "streetNames": "",
-        "commonPrescriptions": ""
+        "streetNames": "China Town, Dance Fever, Apache, Jackpot",
+        "commonPrescriptions": "Actiq, Fentora, Abstral, Subsys, Lazanda, Duragesic"
     },
     {
         "name": "JWH-18 (Synthetic Marijuana)",
@@ -77,7 +77,7 @@
         "drugClass": "Cannabis",
         "prescribed": false,
         "streetNames": "Fake Weed, Spice, K2",
-        "common-prescriptions": "N/A"
+        "commonPrescriptions": "N/A"
     },
     {
         "name": "Methadone",
@@ -92,7 +92,7 @@
         "abbreviation": "M-AMP",
         "drugClass": "Stimulant",
         "prescribed": false,
-        "streetNames": "Crystal Meth, Speed",
+        "streetNames": "Crystal Meth, Speed, Ice, Chalk, Trash",
         "commonPrescriptions": "N/A"
     },
     {
@@ -108,7 +108,7 @@
         "abbreviation": "MOP",
         "drugClass": "Narcotic",
         "prescribed": true,
-        "streetNames": "",
+        "streetNames": "Mister Blue, God's Drug, Dreamer",
         "commonPrescriptions": "Duramorph, Roxanol, Codeine"
     },
     {
@@ -116,7 +116,7 @@
         "abbreviation": "OPI",
         "drugClass": "Narcotic",
         "prescribed": true,
-        "streetNames": "",
+        "streetNames": "Brown Sugar, Junk, White China, White Horse",
         "commonPrescriptions": "Hydrocodone"
     },
     {
@@ -148,7 +148,7 @@
         "abbreviation": "TCA",
         "drugClass": "Depressant",
         "prescribed": true,
-        "streetNames": "",
+        "streetNames": "Blue Angels, Blue Birds",
         "commonPrescriptions": "Amitriptyline, Amoxapine Desipramine (Norpramin), Doxepin"
     }
 ]
