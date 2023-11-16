@@ -1,5 +1,5 @@
 const display = document.querySelector("#reference-table");
-const url = "../data/substance-ref.json";
+const url = "data/substance-ref.json";
 
 async function getSubstanceData() {
   const response = await fetch(url);

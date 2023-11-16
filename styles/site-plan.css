@@ -1,4 +1,16 @@
-@import "root.css";
+h1, h2, p {
+  margin: 1em;
+}
+
+header {
+  background-color: var(--federal-blue);
+}
+
+header h1,
+header h2 {
+  color: white;
+  padding: 10px;
+}
 
 #color-grid p {
   font-weight: bold;
@@ -52,10 +64,8 @@ p {
   text-align: center;
 }
 
-header h1,
-header h2 {
-  color: white;
-  padding: 10px;
+img {
+  max-width: 94%;
 }
 
 footer a {
@@ -64,8 +74,4 @@ footer a {
 
 footer p {
   text-align: left;
-}
-
-img {
-  max-width: 94%;
 }
