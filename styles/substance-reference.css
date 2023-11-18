@@ -76,7 +76,6 @@ table {
   margin: 2rem auto;
   border-collapse: collapse;
   background-color: darkgray;
-  max-width: 85%;
 }
 
 th {
@@ -105,5 +104,6 @@ tbody tr:nth-child(even) {
 }
 
 body p {
-  margin: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.12em;
 }

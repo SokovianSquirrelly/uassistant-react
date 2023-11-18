@@ -1,6 +1,13 @@
 const display = document.querySelector("#reference-table");
 const url = "data/substance-ref.json";
 
+/*****************************************************************************
+ * GET SUBSTANCE DATA
+ *
+ * This retrieves data from a local JSON file for substance reference.  After
+ * receiving the data, it then decides how the data is displayed depening upon
+ * the screen's width.
+ *****************************************************************************/
 async function getSubstanceData() {
   const response = await fetch(url);
 
@@ -18,6 +25,12 @@ async function getSubstanceData() {
   }
 }
 
+/*****************************************************************************
+ * DISPLAY FOR MOBILE
+ *
+ * If this is being viewed on a mobile phone, the user will see a list of
+ * collapsable items, each with substance details.
+ *****************************************************************************/
 function displayForMobile(data) {
   data.forEach((substance) => {
     const substanceSection = document.createElement("section");
@@ -72,8 +85,14 @@ function displayForMobile(data) {
       details.classList.toggle("open");
     });
   });
+  addDisclaimer();
 }
 
+/*****************************************************************************
+ * DISPLAY FOR DESKTOP
+ *
+ * On a desktop screen, the data will be displayed via a table.
+ *****************************************************************************/
 function displayForDesktop(data) {
   const table = document.createElement("table");
   const header = document.createElement("thead");
@@ -140,6 +159,22 @@ function displayForDesktop(data) {
 
   table.appendChild(body);
   display.appendChild(table);
+  addDisclaimer();
+}
+
+/*****************************************************************************
+ * ADD DISCLAIMER
+ *
+ * There is a disclaimer about the legality of medical marijuana since it is
+ * still illegal in certain states.  The reason this is being done in
+ * JavaScript rather than hardcoded in HTML is because I'd like the disclaimer
+ * to be directly under the displayed data without fumbling around with CSS.
+ *****************************************************************************/
+function addDisclaimer() {
+  const disclaimer = document.createElement("p");
+  disclaimer.textContent =
+    "*Marijuana is only legally prescribed in some states. Please refer to your state and local laws regarding information on this substance.";
+  display.appendChild(disclaimer);
 }
 
 getSubstanceData();
