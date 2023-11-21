@@ -66,7 +66,7 @@
 
         <label class="top"
           >Date of Birth<span class="required-field">*</span>
-          <input type="date" name="date-of-birth" required
+          <input type="date" name="dob" required
         /></label>
       </fieldset>
 
@@ -94,6 +94,12 @@
             name="street"
             placeholder="Street"
             required
+          />
+          <input
+            class="address-field"
+            type="text"
+            name="unit"
+            placeholder="Unit Number (If Applicable)"
           />
           <input
             class="address-field"
@@ -131,17 +137,17 @@
         <label class="sbs"
           ><input
             type="radio"
-            name="age-group"
+            name="ageGroup"
             value="juvenile"
           />Juvenile</label
         >
         <label class="sbs"
-          ><input type="radio" name="age-group" value="adult" />Adult</label
+          ><input type="radio" name="ageGroup" value="adult" />Adult</label
         >
 
         <label class="top"
           >Donor Type
-          <select name="donor-type">
+          <select name="donorType">
             <option value="">Please Select</option>
             <option value="formal-supervision">Formal Supervision</option>
             <option value="pre-trial">Pre-Trial Supervision</option>
@@ -156,19 +162,14 @@
 
         <label class="top"
           >Testing Group
-          <select name="testing-group" id="testing-group">
-            <option value="">None</option>
-            <option value="blue">Blue</option>
-            <option value="yellow">Yellow</option>
-            <option value="pink">Pink</option>
-            <option value="green">Green</option>
-          </select>
+          <input type="text" name="testingGroup" />
         </label>
 
         <label class="sbs"
-          ><input
+          ><input type="hidden" name="activationStatus" value="inactive">
+          <input
             type="checkbox"
-            name="activation-status"
+            name="activationStatus"
             value="active"
           />Active</label
         >
