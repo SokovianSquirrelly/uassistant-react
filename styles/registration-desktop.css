@@ -1,0 +1,6 @@
+@media only screen and (min-width: 769px) {
+    fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
