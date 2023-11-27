@@ -1,5 +1,8 @@
 import today from "./dates.js";
 
+const currYear = today.getFullYear();
+const currMonth = today.getMonth();
+
 const calendar = document.querySelector("#calendar-body");
 const currentMonth = document.querySelector("#month");
 
@@ -11,6 +14,11 @@ function displayCalendar() {
   currentMonth.textContent = `${today.toLocaleString("default", {
     month: "long",
   })} ${today.getFullYear().toString()}`;
+
+  let firstDayOfMonth = new Date(currYear, currMonth, 1).getDay();
+  let lastDateOfMonth = new Date(currYear, currMonth + 1, 0).getDate();
+  let lastDayOfMonth = new Date(currYear, currMonth, lastDateOfMonth).getDay();
+  let lastDateOfLastMonth = new Date(currYear, currMonth, 0).getDate();
 }
 
 hideButton.addEventListener("click", () => {
