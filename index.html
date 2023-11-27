@@ -36,17 +36,30 @@
           <div id="weather"></div>
         </section>
         <section class="home-page-cards" id="reminders">
-          <h3>Next UA Testing Date:</h3>
-          <p>TBD</p>
+          <h3>Reminders</h3>
+          <p>Next Testing Date: TBD</p>
         </section>
         <section class="home-page-cards" id="calendar">
-          <section id="calendar-header">
-            <button id="previous-month">⇐</button>
-            <h4 id="month"></h4>
-            <button id="next-month">⇒</button>
-            <button id="hide-calendar"></button>
-          </section>
-          <section id="calendar-body"></section>
+          <table>
+            <thead>
+              <tr>
+                <th><button id="previous-month">⇐</button></th>
+                <th colspan="4"><h4 id="month"></h4></th>
+                <th><button id="next-month">⇒</button></th>
+                <th><button id="hide-calendar"></button></th>
+              </tr>
+              <tr>
+                <th class="dayOfWeek">Sun</th>
+                <th class="dayOfWeek">Mon</th>
+                <th class="dayOfWeek">Tue</th>
+                <th class="dayOfWeek">Wed</th>
+                <th class="dayOfWeek">Thu</th>
+                <th class="dayOfWeek">Fri</th>
+                <th class="dayOfWeek">Sat</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+          </table>
         </section>
       </section>
     </main>

@@ -1,18 +1,35 @@
-#calendar-header {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr;
+#calendar table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+#previous-month, #next-month {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#month {
+    font-size: 1.25em;
 }
 
 #hide-calendar {
-    padding: 0.25em;
+    padding: 0.5em;
     border: none;
     background-color: var(--navy-blue);
     color: white;
     font-weight: bold;
     font-size: 1em;
     border-radius: 2em;
+    cursor: pointer;
 }
 
 #hide-calendar::before {
     content: "Hide";
+}
+
+#hide-calendar.hidden::before {
+    content: "Show";
 }
