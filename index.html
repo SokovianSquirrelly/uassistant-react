@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAssistant | Home</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/index-desktop.css" />
+    <link rel="stylesheet" href="styles/calendar.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="main-img">
+          <img
+            src="images/icon-placeholder.jpg"
+            alt="click here to return to home page"
+        /></a>
+        <button id="menu-button"></button>
+        <ul class="navigation">
+          <li><a href="client-manager.html">Manage Donors</a></li>
+          <li><a href="ua-testing.html">UA Testing</a></li>
+          <li><a href="#">Manage Messaging</a></li>
+          <li><a href="substance-reference.html">Substance Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Welcome to UAssistant!</h1>
+      <div id="sign-in"></div>
+      <section id="home-main">
+        <section class="home-page-cards" id="weather">
+          <h3>Weather</h3>
+          <div id="weather"></div>
+        </section>
+        <section class="home-page-cards" id="reminders">
+          <h3>Reminders</h3>
+          <p>Next Testing Date: TBD</p>
+        </section>
+        <section class="home-page-cards" id="calendar">
+          <table>
+            <thead>
+              <tr>
+                <th><button id="previous-month">⇐</button></th>
+                <th colspan="4"><h4 id="month"></h4></th>
+                <th><button id="next-month">⇒</button></th>
+                <th><button id="hide-calendar"></button></th>
+              </tr>
+              <tr>
+                <th class="dayOfWeek">Sun</th>
+                <th class="dayOfWeek">Mon</th>
+                <th class="dayOfWeek">Tue</th>
+                <th class="dayOfWeek">Wed</th>
+                <th class="dayOfWeek">Thu</th>
+                <th class="dayOfWeek">Fri</th>
+                <th class="dayOfWeek">Sat</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho</p>
+      <a href="site-plan.html">View Site Plan</a>
+    </footer>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/calendar.js" type="module"></script>
+    <script src="scripts/firebase.js" type="module"></script>
+  </body>
+</html>
