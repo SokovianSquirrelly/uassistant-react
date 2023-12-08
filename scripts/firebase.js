@@ -16,7 +16,6 @@ const app = initializeApp(firebaseConfig);
 
 // Firestore
 const db = getFirestore(app);
-
 const colRef = collection(db, "DonorsTest");
 
 getDocs(colRef).then((snapshot) => {
@@ -25,6 +24,35 @@ getDocs(colRef).then((snapshot) => {
     donors.push({ ...doc.data(), id: doc.id });
   });
   console.log(donors);
+  displayData(donors);
 }).catch(error => {
   console.log(error.message);
-})
+});
+
+const donorData = document.querySelector("#client-list");
+
+function displayData(donors) {
+  donors.forEach((donor) => {
+    let tableRow = document.createElement("tr");
+
+    let idCell = document.createElement("td");
+    let firstNameCell = document.createElement("td");
+    let lastNameCell = document.createElement("td");
+    let officerCell = document.createElement("td");
+    let groupCell = document.createElement("td");
+
+    idCell.textContent = donor.id;
+    firstNameCell.textContent = donor.firstName;
+    lastNameCell.textContent = donor.lastName;
+    officerCell.textContent = donor.probationOfficer;
+    groupCell.textContent = donor.testingGroup;
+
+    tableRow.appendChild(idCell);
+    tableRow.appendChild(firstNameCell);
+    tableRow.appendChild(lastNameCell);
+    tableRow.appendChild(officerCell);
+    tableRow.appendChild(groupCell);
+
+    donorData.appendChild(tableRow);
+  });
+}
