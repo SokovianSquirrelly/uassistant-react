@@ -1,9 +1,13 @@
 #client-table {
-    margin: auto;
+    margin: 1em auto;
     border: 3px solid black;
     border-collapse: collapse;
     background-color: darkgray;
     max-width: 85%;
+}
+
+#client-table tr:nth-child(even) {
+    background-color: lightgray;
 }
 
 th {
@@ -17,4 +21,12 @@ th {
 th, td {
     padding: 1rem;
     text-align: center;
+}
+
+tr td {
+    border: 1px solid gray;
+}
+
+td {
+    font-family: var(--paragraph-font);
 }
