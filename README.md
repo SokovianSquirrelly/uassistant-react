@@ -7,3 +7,9 @@ Upon leaving the department for an internship in backend software development, I
 ## Color Palette
 
 The palette can be found [here](https://coolors.co/78c0e0-449dd1-192bc2-150578-0e0e52).
+
+## Development Instructions
+
+If you ever make a change to "firebase.js", you MUST run the following command in your terminal in order to update "bundle.js":
+
+>>npm run build

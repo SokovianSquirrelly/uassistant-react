@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/registration-desktop.css">
   </head>
   <body>
-    <form method="get">
+    <form method="get" id="sign-in-form">
       <fieldset>
 
         <label class="top"
@@ -37,11 +37,6 @@
         <label class="top">Department Name <input type="text" /></label>
 
         <label class="top"
-          >Username<span class="required-field">*</span>
-          <input type="text" id="username" name="username" required
-        /></label>
-
-        <label class="top"
           >Password<span class="required-field">*</span>
           <input type="password" id="password" name="password" required
         /></label>
@@ -57,7 +52,7 @@
 
       <section id="endButtons">
         <input id="backButton" value="Cancel" type="button" />
-        <input id="submitButton" value="Continue" type="submit" />
+        <input id="submitButton" value="Begin Using UAssistant" type="submit" />
       </section>
 
     </form>
@@ -66,6 +61,7 @@
       <p>&copy;<span id="year"></span> | Collin Squires | Rexburg, Idaho</p>
       <a href="site-plan.html">View Site Plan</a>
     </footer>
+    <script src="scripts/signUpUser.js"></script>
     <script src="scripts/dates.js" type="module"></script>
     <script src="scripts/checkPasswords.js"></script>
   </body>
