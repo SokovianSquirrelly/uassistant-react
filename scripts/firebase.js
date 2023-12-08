@@ -20,5 +20,11 @@ const db = getFirestore(app);
 const colRef = collection(db, "DonorsTest");
 
 getDocs(colRef).then((snapshot) => {
-  console.log(snapshot.docs)
-});
+  let donors = [];
+  snapshot.docs.forEach((doc) => {
+    donors.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(donors);
+}).catch(error => {
+  console.log(error.message);
+})
