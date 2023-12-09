@@ -37,30 +37,63 @@ getDocs(colRef)
     console.log(error.message);
   });
 
-const donorTable = document.querySelector("#client-table");
-const donorData = document.querySelector("#client-list");
+const donorSection = document.querySelector("#donor-section");
 
 function displayDataMobile(donors) {}
 
 function displayDataDesktop(donors) {
+  const donorTable = document.createElement("table");
+  const header = document.createElement("thead");
+  const headerRow = document.createElement("tr");
+  const body = document.createElement("tbody");
+
+  // Making the header
+
+  const hFirst = document.createElement("th");
+  const hLast = document.createElement("th");
+  const hOfficer = document.createElement("th");
+  const hSupervision = document.createElement("th");
+  const hGroup = document.createElement("th");
+
+  hFirst.textContent = "First Name";
+  hLast.textContent = "Last Name";
+  hOfficer.textContent = "Probation Officer";
+  hSupervision.textContent = "Supervision Type";
+  hGroup.textContent = "Testing Group";
+
+  headerRow.appendChild(hFirst);
+  headerRow.appendChild(hLast);
+  headerRow.appendChild(hOfficer);
+  headerRow.appendChild(hSupervision);
+  headerRow.appendChild(hGroup);
+
+  header.appendChild(headerRow);
+  donorTable.appendChild(header);
+
   donors.forEach((donor) => {
     let tableRow = document.createElement("tr");
 
     let firstNameCell = document.createElement("td");
     let lastNameCell = document.createElement("td");
     let officerCell = document.createElement("td");
+    let supervisionCell = document.createElement("td");
     let groupCell = document.createElement("td");
 
     firstNameCell.textContent = donor.firstName;
     lastNameCell.textContent = donor.lastName;
     officerCell.textContent = donor.probationOfficer;
+    supervisionCell.textContent = donor.donorType;
     groupCell.textContent = donor.testingGroup;
 
     tableRow.appendChild(firstNameCell);
     tableRow.appendChild(lastNameCell);
     tableRow.appendChild(officerCell);
+    tableRow.appendChild(supervisionCell);
     tableRow.appendChild(groupCell);
 
-    donorData.appendChild(tableRow);
+    body.appendChild(tableRow);
   });
+
+  donorTable.appendChild(body);
+  donorSection.appendChild(donorTable);
 }
