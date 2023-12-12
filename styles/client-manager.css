@@ -30,3 +30,29 @@ tr td {
 td {
     font-family: var(--paragraph-font);
 }
+
+.edit-donor,
+.delete-donor {
+    margin: 0 .5em;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.edit-donor {
+    background-color: yellow;
+}
+
+.delete-donor {
+    background-color: red;
+}
+
+.edit-donor::before {
+    content: "✎";
+}
+
+.delete-donor::before {
+    content: "☒";
+}

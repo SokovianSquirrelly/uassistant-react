@@ -1,6 +1,19 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  addDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 
+/*****************************************************************************
+ * FIREBASE CONFIG
+ *
+ * This configuration makes sure we can connect to the correct database on
+ * Firebase.
+ *****************************************************************************/
 const firebaseConfig = {
   apiKey: "AIzaSyDZDDpTJADUbMWr7TuOVTznpWlvGo-3cgQ",
   authDomain: "uassistant-4f486.firebaseapp.com",
@@ -18,6 +31,12 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const colRef = collection(db, "DonorsTest");
 
+/*****************************************************************************
+ * DISPLAY
+ *
+ * This will display each donor's info in the client manager.  The information
+ * will display differently based upon what kind of device the user is using.
+ *****************************************************************************/
 getDocs(colRef)
   .then((snapshot) => {
     let donors = [];
@@ -39,8 +58,18 @@ getDocs(colRef)
 
 const donorSection = document.querySelector("#donor-section");
 
+/*****************************************************************************
+ * DISPLAY DATA MOBILE
+ *
+ * TODO: Get this going.
+ *****************************************************************************/
 function displayDataMobile(donors) {}
 
+/*****************************************************************************
+ * DISPLAY DATA DESKTOP
+ *
+ * The information will be displayed in a table when this function is called.
+ *****************************************************************************/
 function displayDataDesktop(donors) {
   const donorTable = document.createElement("table");
   const header = document.createElement("thead");
@@ -78,6 +107,7 @@ function displayDataDesktop(donors) {
     let officerCell = document.createElement("td");
     let supervisionCell = document.createElement("td");
     let groupCell = document.createElement("td");
+    let buttonCell = document.createElement("td");
 
     firstNameCell.textContent = donor.firstName;
     lastNameCell.textContent = donor.lastName;
@@ -85,11 +115,23 @@ function displayDataDesktop(donors) {
     supervisionCell.textContent = donor.donorType;
     groupCell.textContent = donor.testingGroup;
 
+    let editButton = document.createElement("button");
+    editButton.classList.add("edit-donor");
+    let deleteButton = document.createElement("button");
+    deleteButton.classList.add("delete-donor");
+    deleteButton.addEventListener("click", () => {
+      deleteDonor(donor.id);
+    });
+
+    buttonCell.appendChild(editButton);
+    buttonCell.appendChild(deleteButton);
+
     tableRow.appendChild(firstNameCell);
     tableRow.appendChild(lastNameCell);
     tableRow.appendChild(officerCell);
     tableRow.appendChild(supervisionCell);
     tableRow.appendChild(groupCell);
+    tableRow.appendChild(buttonCell);
 
     body.appendChild(tableRow);
   });
@@ -98,6 +140,13 @@ function displayDataDesktop(donors) {
   donorSection.appendChild(donorTable);
 }
 
+/*****************************************************************************
+ * ADD DONOR
+ *
+ * This collects the new donor info and puts it up in Firebase.
+ *
+ * TODO: Fix activationStatus so it doesn't always return true.
+ *****************************************************************************/
 const addDonor = document.getElementById("new-client-form");
 const activationCheckbox = document.getElementById("activationStatus");
 addDonor.addEventListener("submit", (e) => {
@@ -184,3 +233,20 @@ addDonor.addEventListener("submit", (e) => {
     );
   });
 });
+
+function editDonor() {}
+
+function deleteDonor(donorId) {
+  const docRef = doc(db, "DonorsTest", donorId);
+
+  if (
+    confirm(
+      "If you delete this donor, all data will be erased. Are you absolutely sure you want to delete the donor?"
+    )
+  ) {
+    deleteDoc(docRef).then(() => {
+      alert("Donor successfully deleted.");
+      location.reload();
+    });
+  }
+}
