@@ -28,7 +28,7 @@
   </header>
 
   <body>
-    <form method="get" action="">
+    <form method="get" id="new-client-form">
       <!--Basic Info-->
       <fieldset>
         <legend>Basic Information</legend>
@@ -45,13 +45,13 @@
 
         <div>Gender<span class="required-field">*</span></div>
         <label class="sbs"
-          ><input type="radio" name="gender" value="male" required />Male</label
+          ><input type="radio" name="gender" value="Male" required />Male</label
         >
         <label class="sbs"
           ><input
             type="radio"
             name="gender"
-            value="female"
+            value="Female"
             required
           />Female</label
         >
@@ -59,7 +59,7 @@
           ><input
             type="radio"
             name="gender"
-            value="other"
+            value="Non-binary/Unspecified"
             required
           />Non-binary/Unspecified</label
         >
@@ -138,25 +138,25 @@
           ><input
             type="radio"
             name="ageGroup"
-            value="juvenile"
+            value="Juvenile"
           />Juvenile</label
         >
         <label class="sbs"
-          ><input type="radio" name="ageGroup" value="adult" />Adult</label
+          ><input type="radio" name="ageGroup" value="Adult" />Adult</label
         >
 
         <label class="top"
           >Donor Type
           <select name="donorType">
             <option value="">Please Select</option>
-            <option value="formal-supervision">Formal Supervision</option>
-            <option value="pre-trial">Pre-Trial Supervision</option>
-            <option value="mental-health">Mental Health Court</option>
-            <option value="drug-court">Drug Court</option>
-            <option value="jmp">JMP Court</option>
-            <option value="diversion">Diversion</option>
-            <option value="screening">Screening</option>
-            <option value="other">Other</option>
+            <option value="Formal Supervision">Formal Supervision</option>
+            <option value="Pre-trial Supervision">Pre-trial Supervision</option>
+            <option value="Mental Health Court">Mental Health Court</option>
+            <option value="Drug Court">Drug Court</option>
+            <option value="JMP Court">JMP Court</option>
+            <option value="Diversion">Diversion</option>
+            <option value="Screening">Screening</option>
+            <option value="Other">Other</option>
           </select>
         </label>
 
@@ -165,12 +165,12 @@
           <input type="text" name="testingGroup" />
         </label>
 
-        <label class="sbs"
-          ><input type="hidden" name="activationStatus" value="inactive">
+        <label class="sbs">
           <input
+            id="activationStatus"
             type="checkbox"
             name="activationStatus"
-            value="active"
+            value="checked"
           />Active</label
         >
       </fieldset>
@@ -195,5 +195,6 @@
     <script src="scripts/dates.js" type="module"></script>
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/newClient.js"></script>
+    <script src="dist/bundle.js" type="module"></script>
   </body>
 </html>
