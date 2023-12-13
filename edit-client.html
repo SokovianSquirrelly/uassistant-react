@@ -44,7 +44,7 @@
         /></label>
 
         <div>Gender<span class="required-field">*</span></div>
-        <label class="sbs"
+        <label class="sbs" id="gender-edit"
           ><input type="radio" name="gender" value="Male" required />Male</label
         >
         <label class="sbs"
@@ -66,7 +66,7 @@
 
         <label class="top"
           >Date of Birth<span class="required-field">*</span>
-          <input type="date" name="dob" required
+          <input type="date" name="dob" required id="dob-edit"
         /></label>
       </fieldset>
 
@@ -76,12 +76,17 @@
 
         <label class="top"
           >Phone Number<span class="required-field">*</span>
-          <input type="tel" name="phone" placeholder="2085551234" required
+          <input
+            type="tel"
+            name="phone"
+            placeholder="2085551234"
+            required
+            id="phone-edit"
         /></label>
 
         <label class="top"
           >Email
-          <input type="email" name="email" placeholder="someone@gmail.com"
+          <input type="email" name="email" placeholder="someone@gmail.com" id="email-edit"
         /></label>
 
         <div id="home-address">
@@ -93,6 +98,7 @@
             type="text"
             name="street"
             placeholder="Street"
+            id="street-edit"
             required
           />
           <input
@@ -100,12 +106,14 @@
             type="text"
             name="unit"
             placeholder="Unit Number (If Applicable)"
+            id="unit-edit"
           />
           <input
             class="address-field"
             type="text"
             name="city"
             placeholder="City"
+            id="city-edit"
             required
           />
           <input
@@ -113,6 +121,7 @@
             type="text"
             name="state"
             placeholder="State"
+            id="state-edit"
             required
           />
           <input
@@ -120,6 +129,7 @@
             type="text"
             name="zip"
             placeholder="Zip or Postal Code (Optional)"
+            id="zip-edit"
           />
         </div>
       </fieldset>
