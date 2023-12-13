@@ -8,6 +8,7 @@ import {
   doc,
   updateDoc,
   getDoc,
+  arrayUnion
 } from "firebase/firestore";
 
 /*****************************************************************************
@@ -372,37 +373,59 @@ function deleteDonor(donorId) {
 
 const daysOffManager = document.getElementById("schedule-days-off");
 if (daysOffManager) {
-  let donors = [];
   getDocs(colRef).then((snapshot) => {
+    let donors = [];
     snapshot.docs.forEach((doc) => {
       donors.push({ ...doc.data(), id: doc.id });
     });
-  });
+    donors.forEach((donor) => {
+      const docRef = doc(db, "DonorsTest", donor.id);
 
-  console.log(donors);
-  donors.forEach((donor) => {
-    const donorName = document.createElement("h3");
-    const daysOffForm = document.createElement("form");
-    const calendar = document.createElement("input");
-    const reason = document.createElement("input");
-    const submit = document.createElement("input");
+      const donorName = document.createElement("h3");
+      const daysOffForm = document.createElement("form");
+      const calendar = document.createElement("input");
+      const reason = document.createElement("input");
+      const submit = document.createElement("input");
 
-    donorName.textContent = `${donor.lastName}, ${donor.firstName}`;
+      donorName.textContent = `${donor.lastName}, ${donor.firstName}`;
 
-    daysOffForm.setAttribute("method", "post");
+      daysOffForm.setAttribute("method", "post");
 
-    calendar.setAttribute("type", "date");
-    calendar.setAttribute("name", "select-day");
+      calendar.setAttribute("type", "date");
+      calendar.setAttribute("required", true);
+      calendar.setAttribute("name", "selectDay");
 
-    reason.setAttribute("type", "text");
-    reason.setAttribute("name", "reasoning");
+      reason.setAttribute("type", "text");
+      reason.setAttribute("required", true);
+      reason.setAttribute("name", "reasoning");
 
-    daysOffForm.appendChild(calendar);
-    daysOffForm.appendChild(reason);
-    daysOffForm.appendChild(submit);
+      submit.setAttribute("type", "submit");
 
-    daysOffManager.appendChild(donorName);
-    daysOffManager.appendChild(daysOffForm);
+      daysOffForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const map = {
+          date: daysOffForm.selectDay.value,
+          reasoning: daysOffForm.reasoning.value,
+        };
+        console.log(map);
+
+        updateDoc(doc(db, "DonorsTest", donor.id), {
+          datesExcused: arrayUnion(map),
+        }).then(() => {
+          alert("Information has been updated.");
+          daysOffForm.reset();
+        });
+
+        //let docRef = colRef.doc(donor.id);
+      });
+
+      daysOffForm.appendChild(calendar);
+      daysOffForm.appendChild(reason);
+      daysOffForm.appendChild(submit);
+
+      daysOffManager.appendChild(donorName);
+      daysOffManager.appendChild(daysOffForm);
+    });
   });
 }
 
