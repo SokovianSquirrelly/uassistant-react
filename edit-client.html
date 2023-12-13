@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UAssistant | New Client</title>
+    <title>UAssistant | Edit Client</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/index-desktop.css" />
     <link rel="stylesheet" href="styles/form.css" />
@@ -28,19 +28,19 @@
   </header>
 
   <body>
-    <form method="post" id="new-client-form">
+    <form method="post" id="edit-client-form">
       <!--Basic Info-->
       <fieldset>
         <legend>Basic Information</legend>
 
         <label class="top"
           >First Name<span class="required-field">*</span>
-          <input type="text" name="fname" required
+          <input type="text" name="fname" required id="fname-edit"
         /></label>
 
         <label class="top"
           >Last Name<span class="required-field">*</span>
-          <input type="text" name="lname" required
+          <input type="text" name="lname" required id="lname-edit"
         /></label>
 
         <div>Gender<span class="required-field">*</span></div>
@@ -184,7 +184,7 @@
 
       <section id="endButtons">
         <input id="backButton" value="Cancel" type="button" />
-        <input id="submitButton" value="Create New Client" type="submit" />
+        <input id="submitButton" value="Edit Client" type="submit" />
       </section>
     </form>
 
